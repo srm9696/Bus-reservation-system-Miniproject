@@ -1,0 +1,319 @@
+<html>
+<head><title>register</title>
+<style>
+body {
+  margin: 0;
+  padding:0;
+  font-family: arial, sans-serif, helvetica;
+  background-color:white;
+}
+
+* {box-sizing: border-box;}
+
+#topnav {
+    overflow: hidden;
+    background-color: #ff3333;
+    position:sticky;
+}
+
+#topnav a {
+    float:left;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    ont-size:17px;
+}
+
+#topnav a:hover {
+    background-color: #ffffff;
+    color:#ff3333;
+}
+
+.topnav-right{
+float:right;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: red;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+
+ .form{
+    background-color:#bfbfbf;
+    text-align:center;
+    text-justify: auto;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family:georgia;
+    border-radius:15px;
+    border:solid 2px;
+    border-color: gray;
+    }
+
+table{
+  height: 700px;
+  margin: 0px auto;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-left: 0px;
+}
+
+table th {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-left: 125px;
+
+}
+
+
+   table input{
+   
+
+  }
+  
+  table input[type="text"],input[type="password"], textarea, checkbox,radio
+  {
+    border: solid 2px;
+    border-color: gray;
+    height:35px;
+    color:black;
+    font-size:20px;
+    border-radius: 5px;
+    width: 230px;
+    padding-left: 20px;
+  }  
+
+  table select
+  {
+    border: solid 2px;
+    border-color: gray;
+    height:35px;
+    color:black;
+    font-size:20px;
+    border-radius: 5px;
+    width: 230px;
+    
+  }  
+
+  input[type=submit] {
+    background-color: #ff3333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+input[type=submit]:hover {
+    opacity: .8;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ff3333;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #ff3333;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+</style>
+</head>
+<body>
+<div id="topnav">
+  <a href="home.html">HOME</a>
+  <a href="booking.html">VIEW REGESTRATION</a>
+  <a href="buses.html">BUSES</a>
+  <div class="topnav-right">
+  <a  href="contactus.html">CONTACT </a>
+  <a  href="travel_company.html">ABOUT US</a>
+</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky")
+  } else {
+    topnav.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<form class="form">
+<table  cellpadding="10px">
+<th colspan="4">
+<center> Register Here </center>
+</th>
+
+<tr >
+<td style="padding-left: 100px">First Name </td>
+<td>:&nbsp<input type="text" name="fn" size="20" maxlength="25" placeholder="Your name" /></td>
+<td>Last Name</td> 
+<td>:&nbsp<input type="text" name="ln" size="20" maxlength="25" placeholder="Your last name" /></td>
+</tr>
+
+<tr>
+  <td style="padding-left: 100px">User Name</td>
+  <td colspan="3">:&nbsp<input type="text" name="usr" size="15" maxlength="15" placeholder="Create username" /></td>
+</tr>
+
+<tr >
+  <td style="padding-left: 100px">Password</td>
+  <td colspan="3">:&nbsp<input type="password" name="pwd" size="15" maxlength="20" placeholder="Create password" /> &nbsp* max 15 chars</td>
+</tr>
+
+<tr>
+  <td style="padding-left: 100px">Confirm Password</td>
+  <td colspan="3">:&nbsp<input type="password" name="cpwd" size="15" maxlength="20" placeholder="Re-enter password" /></td>
+</tr>
+
+<tr>
+  <td style="padding-left: 100px">Sex</td>
+  <td>
+    <label class="container">Male
+     <input type="radio"  name="sex" value="male" >
+     <span class="checkmark"></span>
+    </label>
+    <label class="container">Female
+     <input type="radio" name="sex" value="female">
+     <span class="checkmark"></span>
+    </label>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td style="padding-left: 100px"> Mobile No.</td>
+   <td>:&nbsp
+      <select name="cntry_code" style="width: 60px;" >
+       <option value="0">+91</option>
+       <option value="1">+361</option>
+       <option value="2">+670</option>
+      </select>
+      <input style="width: 140px" type="text" name="phone" size="15" maxlength="13" placeholder="9876543210" />
+   </td>
+</tr>
+
+
+<tr>
+ <td colspan="1" style="padding-left: 100px">Password recovery</br>Que. </td>
+ <td colspan="2">
+   :&nbsp<select name="question">
+     <option value="0">What is your pet's name</option>
+     <option value="1">What is your mother's maiden name</option>
+     <option value="2">Who is your best childhood friend</option>
+    </select>
+    </br>:&nbsp<input type="text"></input>
+
+ </td>
+</tr> 
+
+<td style="padding-left: 100px">Alternate Email</td>
+<td colspan="3">:&nbsp<input type="text" name="altemail" size="15" maxlength="25" placeholder="example@exe.com" />&nbsp If any, for password recovery</td>
+</tr>
+
+
+
+<tr>
+ <td style="padding-left:100px" colspan="4">
+  <label class="container"> I Accept the terms & conditions
+   <input type="checkbox" name="accept">
+   <span class="checkmark"></span>
+  </label>
+ </td>
+</tr>
+
+<tr>
+<tr >
+  <td colspan="4"><center><input type="submit"  value="Submit"/></center></td>
+</tr>
+
+</form>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<html>
+<head><title>Our Buses</title>
+<style>
+body{
+  background: #f8f8ff;
+  padding: 0px;
+  margin: 0px;
+}
+.btn{
+    background: red;
+    height: 50px;
+    width: 100%;
+}
+.table1{
+  float:right;
+  padding-right:100px;
+  margin-top:15px
+  }
+
+
+.lgn a {
+  color:black;
+  text-align: center;
+  padding:7px 7px 7px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:4px;
+  background-color: #ffffff;
+}
+.lgn a:hover  {
+    background-color: black;
+  color: white;
+    border-radius:4px;
+    
+}
+
+.su a {
+  height:auto;
+  width:auto;
+  color:black;
+  text-align: center;
+  padding:7px 7px 7px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:4px;
+  background-color: #ffffff;
+}
+.su a:hover  {
+    background-color: black;
+    color: white;
+    border-radius:4px;
+    
+}
+
+
+
+#topnav {
+    overflow: hidden;
+    background-color: #ff3333;
+    position:sticky;
+}
+
+#topnav a {
+    float:left;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    ont-size:17px;
+}
+
+#topnav a:hover {
+    background-color: #ffffff;
+    color:#ff3333;
+}
+
+#topnav a.active {
+    background-color:#f3f3f3;
+    color:#ff3333;
+}
+
+.topnav-right{
+float:right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+
+.bar{
+        background-color: red;
+        color:white;
+        text-align:center;
+        height:70px;
+        font-size:30px;
+        font-family:georgia;
+        padding-top: 35px;
+       
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+    padding-top: 100px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="btn">
+<div id="login" class="table1">  
+  <table>
+    <td class="lgn" ><a href ="login.html">LOGIN</a></td>
+    <td style="padding-left:50px;">Don`t have an account?</td>
+    <td class="su"><a href="register.html" > SIGN UP</a></td>
+    </td>
+  </table>
+</div>
+</div>
+
+<div id="spacer1" style="width:auto;height:5px ;background-color:#FFF"></div>
+
+
+<div id="topnav">
+  <a href="home.html">HOME</a>
+  <a href="viewreg.html">VIEW REGESTRATION</a>
+  <a href="buses.html">BUSES</a>
+  <div class="topnav-right">
+  <a  href="contactus.html">CONTACT </a>
+  <a class="active"  href="travel_company.html">ABOUT US</a>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky")
+  } else {
+    topnav.classList.remove("sticky");
+  }
+}
+</script>
+
+<div id="spacer1" style="width:auto;height:5px ;background-color:#FFF"></div>
+
+<div class="bar">
+About Us
+</div>
+
+<p>RGI Buses is Travel Comapany,</br>over whole aim to provide the comfort to our customers.</p>
+
+
+</br></br></br></br></br></br></br></br></br></br>
+<div id="footer1" style="height:97px;width:100%;background-color:red;box-shadow:-0px 0px 30px #999999">
+<table width="1350" border="0" cellspacing="0" cellpadding="0"></br>
+  <tr>
+    <td style="font-size:13px;width:450px;padding-left:100px;border-right:1px"><u>Top Bus Operators</u><br>
+                                    RGI Travels<br>
+                                    PG Martin<br>
+    </td>
+    <td style="font-size:13px;width:450px">FAQ<br>
+                                            Terms Of Use<br>
+                                            Privacy Policy<br>
+                                            Offers
+    </td>
+    <td style="font-size:13px;width:450px">Hotel Offers<br>
+                                            Contact Us<br>
+                                            Payment Methods<br>
+                                            Customer Care                       
+    </td>
+    <td style="font-size:13px;width:450px">
+    <u>Connect With us<br></u>
+    <a href="https://www.facebook.com/"><img src="fb.jpg"></a>
+    <a href="https://www.twitter.com/"><img src="twitter.jpg"></a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div>
+<div style="height:30px;color: red; width:auto; background-color:#ccc; padding-top:10px; padding-bottom:0px;">
+<marquee style="font-size:18px;"> GROUP 4  All Rights Reserved  2018</marquee>
+</div>
+
+
+</body>
+</html>
+
+

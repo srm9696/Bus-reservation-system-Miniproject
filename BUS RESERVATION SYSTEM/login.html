@@ -1,0 +1,178 @@
+
+<html >
+<head>
+
+<title>Login</title>
+<style>
+  body{
+    
+	margin:0;
+	padding:0;
+    background-color:#bfbfbf;
+	background-position:center;
+	font-family: sans-serif;  
+  }
+
+  #topnav {
+    overflow: hidden;
+    background-color: #ff3333;
+    position:sticky;
+}
+
+#topnav a {
+    float:left;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    ont-size:17px;
+}
+
+#topnav a:hover {
+    background-color: #ffffff;
+    color:#ff3333;
+}
+
+.topnav-right{
+float:right;
+}
+  .loginbox{
+    border-radius:10px;
+    width:380px;
+	height:490px;
+	background:Red;
+	color:#fff;
+	top:20%;
+	left:40%;
+	position:absolute;
+	transform:translate(-50%,-50);
+	box-sizing:border-box;  
+	padding: 60px 30px;
+	
+  }
+  
+  .avatar{
+    border:solid 3px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 135px;
+  }
+  
+  h1{
+	  margin:0;
+	  padding:0 0 20px;
+	  text-align:center;
+	  font-size:24px;
+  }
+  
+  .loginbox p{
+	  margin:0;
+	  padding:0;
+	  font-weight:bold;
+	  font-size:20px;
+  }
+  .loginbox p1{
+	  margin:0;
+	  padding:0;
+	  font-size:18px;
+  }
+  
+  .loginbox input{
+	  width:100%;
+	  margin-bottom:20px;
+  }
+  
+  .loginbox input[type="text"],input[type="password"]
+  {
+	  border:none;
+	  border-bottom:2px solid #fff;
+	  background:transparent;
+	  outline:none;
+	  height:40px;
+	  color:#fff;
+	  font-size:18px;
+  }
+  
+  .loginbox input[type="submit"]
+  {
+      margin-left:80px; 
+	  border:none;
+	  outline: none;
+	  height:40px;
+	  width:150px;
+	  background:#fff;
+	  color:#fb2525;
+	  font-size:18px;
+	  border-radius:20px;
+  }
+  
+  .loginbox input[type="submit"]:hover
+  {
+      
+	  cursor:pointer;
+	  background:#ffc107;
+	  color:#000;
+  }
+  
+  .loginbox input[type="button"]
+  {   margin-left:80px; 
+	  border:none;
+	  outline: none;
+	  height:40px;
+	  width:150px;
+	  background:#fff;
+	  color:#fb2525;
+	  font-size:18px;
+	  border-radius:20px;
+	  margin-top:8px;
+  }
+  
+  .loginbox input[type="button"]:hover
+  {
+	  cursor:pointer;
+	  background:#ffc107;
+	  color:#000;
+	 
+  }
+  .loginbox a:hover
+  {
+	  cursor:pointer;
+	  color:white;
+  }
+  
+
+
+</style>
+</head>
+     
+<body >
+<div id="topnav">
+  <a href="home.html">HOME</a>
+  <a href="viewreg.html">VIEW REGESTRATION</a>
+  <a href="buses.html">BUSES</a>
+  <div class="topnav-right">
+    <a  href="contactus.html">CONTACT </a>
+    <a  href="travel_company.html">ABOUT US</a>
+  </div>
+</div>
+
+ <div class="loginbox">
+  <img src="avatar.png" class="avatar" />
+  <h1>Login Here</h1>
+  <form>
+       <p>Username</p>
+     <input type="text" name="" placeholder="Enter username" /></br>
+       <p>Password</p>
+     <input type="password" name="" placeholder="Enter password" /></br></br>
+     <input type="submit"   name="" value="Login" /></br>
+	   <p1>Dont have an account? </p1></br>
+	 <a href ="register.html"><input type="button" name="" value="Register" /></a></br>
+       <p1><a href="#" >Forget Password</a> </p1></br>
+
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Registration</title>
+	<style>
+	    body{
+	    	background: #f8f8ff;
+	    }
+#topnav {
+    overflow: hidden;
+    background-color: #ff3333;
+    position:sticky;
+ 
+}
+
+#topnav a {
+    float:left;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+}
+
+#topnav a:hover {
+    background-color: #ffffff;
+    color:#ff3333;
+}
+
+#topnav a.active {
+    background-color:#f3f3f3;
+    color:#ff3333;
+}
+
+.topnav-right{
+float:right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+		table{
+			height: 500px;
+			width: 500px;
+			background: #fff;
+			border: solid 2px #ddd;
+			border-radius: 10px ;
+			margin: 0px auto;
+			margin-top: 100px;
+		}
+
+		table th{
+			border-bottom: 2px solid #ddd; 
+			font-size: 30px;
+			
+		}
+		table tr td {
+			padding-left: 50px;
+			border-bottom: 1px solid #ddd; 
+			font-size: 20px;
+			width: 50px;
+		}
+		
+	</style>
+</head>
+<body>
+<div id="topnav">
+  <a href="home.html">HOME</a>
+  <a class="active" href="viewreg.html">VIEW REGESTRATION</a>
+  <a href="buses.html">BUSES</a>
+  <div class="topnav-right">
+  <a  href="contactus.html">CONTACT </a>
+  <a  href="travel_company.html">ABOUT US</a>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky")
+  } else {
+    topnav.classList.remove("sticky");
+  }
+}
+</script>
+
+    <table>
+    	<th colspan="2"> Your Ticket</th>
+    
+    	<tr>
+    		<td>Name:</td>
+    		<td></td>
+    	</tr>
+    	<tr>
+    		<td>Contact:</td>
+    		<td></td>
+    	</tr>
+    	<tr>
+    		<td>Bus No.:</td>
+    		<td></td>
+    	</tr>
+    	<tr>
+    		<td style="border-radius:0 0 0 10px">Seat No.:</td>
+    		<td style="border-radius:0 0 10px 0"></td>
+    	</tr>
+    </table>
+
+<footer>
+<div style="height:30px; width:auto; background-color:#ccc; padding-top:5px; padding-bottom:0px; margin-top: 55px;">
+<marquee><div id="font_container" style="height:20px;width:auto;font-size:20px;color:red"> GROUP 4  All Rights Reserved	2018</div></marquee></div>
+</footer>
+</body>
+</html>

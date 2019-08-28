@@ -1,0 +1,321 @@
+
+<html >
+<head>
+<title>HOME</title>
+<style>
+body {
+  margin: 0;
+  padding:0;
+  font-family:sans-serif;
+  background-color:white;
+}
+.upcont{
+    height:80px;
+	width:100%;
+	background-color:#ff3333;
+	backface-visibility:50%;
+	padding-top:30px; 
+	
+}
+.titl{
+    width:auto;
+    height:auto; 
+    font-size:40px; 
+    padding-left:100px; 
+    color:#ffffff;
+}
+
+.table1{
+  float:right;
+  padding-right:100px;
+  margin-top:15px
+  }
+
+
+.lgn a {
+  color:black;
+  text-align: center;
+  padding:7px 7px 7px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:4px;
+  background-color: #ffffff;
+}
+.lgn a:hover  {
+	background-color: black;
+  color: white;
+	border-radius:4px;
+	
+}
+
+
+
+.su a {
+  height:auto;
+  width:auto;
+  color:black;
+  text-align: center;
+  padding:7px 7px 7px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:4px;
+  background-color: #ffffff;
+}
+.su a:hover  {
+	background-color: black;
+    color: white;
+	border-radius:4px;
+	
+}
+
+
+
+
+#topnav {
+    overflow: hidden;
+    background-color: #ff3333;
+    position:sticky;
+}
+
+#topnav a {
+    float:left;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    ont-size:17px;
+}
+
+#topnav a:hover {
+    background-color: #ffffff;
+    color:#ff3333;
+}
+
+#topnav a.active {
+    background-color:#f3f3f3;
+    color:#ff3333;
+}
+
+.topnav-right{
+float:right;
+}
+
+.cont{  background-image:url("cover11.gif");
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+		color:black;
+		text-align:center;
+		text-justify: auto;
+		font-size:55px;
+		font-family:georgia;
+		padding-left:10px;
+		padding-right:40px:
+		padding-top:150px;
+		margin-left:70px;
+		margin-right:70px;
+		}
+.cont {
+    opacity:  1;
+    filter: alpha(opacity=50); 
+    }
+
+.cont:hover {
+    opacity:  .85;
+    filter: alpha(opacity=100); 
+}
+
+.btn a {
+    height:auto;
+	width:auto;
+    background-color:white; 
+    border:solid 2px gray;
+    color: black;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+	font-family:Courier;
+	
+}
+
+.btn a:hover  {
+	background-color:red;
+    color: white;
+	cursor:pointer;
+	border:solid 2px white;
+}
+
+.form{
+    width:720px;
+    height:380px;
+    border:solid 3px;
+    overflow:hidden;
+    float:right;
+    margin-top:-450px;
+    margin-right:70px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="container" >
+<div id="Upper_Container" class="upcont" >
+<div>
+<div id="login" class="table1">  
+<table >
+ <td class="lgn" ><a href ="login.html">LOGIN</a></td>
+  <td style="padding-left:50px;">Don`t have an account?</td>
+  <td class="su"><a href="register.html" > SIGN UP</a></td>
+  </td>
+  </table>
+  </div>
+  </div>
+  <div id="cover" class="titl"><b>Bus Booking System</b>
+	        </div>
+		</div>
+<div id="spacer1" style="width:auto;height:5px ;background-color:#FFF"></div>
+
+    
+<div id="topnav">
+  <a class="active" href="home.html">HOME</a>
+  <a href="viewreg.html">VIEW REGESTRATION</a>
+  <a href="buses.html">BUSES</a>
+  <div class="topnav-right">
+  <a  href="contactus.html">CONTACT </a>
+  <a  href="travel_company.html">ABOUT US</a>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky")
+  } else {
+    topnav.classList.remove("sticky");
+  }
+}
+</script>
+
+<div id="spacer2" style="width:auto;height:7px;"></div>
+<div class="cont"><br>
+WELCOME TO RGI BUSES<br>
+Join us by doing Registration
+<br><br>
+<div class="btn">
+<a href="#form_container" class="btn" style="background-color:red; border-radius:10px" >BOOKING</a>
+</div>
+</div>
+<div id="spacer3" style="width:auto;height:10px;"></div>
+<div id="add_gif" style="width:550px;height:500px;float:center;overflow:hidden; margin-left:70px">
+<img src="anim.gif">
+</div>
+
+	<div id="form_container" class="form">     
+	<form  action="search_results.php" method="post">
+   	<div id="info_container" style="width:700px;height:400px;border-width:2px;border-color:#F49513;background-color:red;padding-right: 20px;padding-top: 10px; overflow:hidden">
+   	<div style="width:auto;height:60px;border-width:10px;padding:2px">
+   	<div style="text-align:center; font-family: georgia;"><font size="+2"><b>Booking your Seats is Just fingertips away.</br> Book Them Now.</b> </font></div> 
+   	</div>
+   	<table width="600" border="0" cellspacing="10" cellpadding="25">
+ 	<tr>
+    	<td><label style="font-size:16px"><b>From</b></label><br>
+    	<select name="from_city" style="width:200px; height: 30px;">
+        <option value="default">Select a City</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Nagpur<">Nagpur</option>
+	<option value="Ahmadnagar">Ahmadnagar</option>
+        <option value="Nashik">Nashik</option>
+	<option value="Solapur">Solapur</option>
+        </select>
+    	</td>
+        
+    	<td><label><b>To</b></label><br>
+    	<select name="to_city" style="width:200px; height: 30px;">
+        <option value="default">Select a City</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Nagpur">Nagpur</option>
+	<option value="Ahmadnagar">Ahmadnagar</option>
+        <option value="Nashik">Nashik</option>
+	<option value="Solapur">Solapur</option>
+        </select>
+    	</td>
+  	</tr>
+  <br>
+  <tr>
+    <td><label><b>Date Of Journey</b></label><br>
+    	<input type="date" name="date" value="" style="width:200px; height: 30px;">
+    </td>
+    <td><label><b>Condition</b></label><br>
+    	<select name="condition" style="width:200px; height: 30px;">
+         <option value="default">select</option>
+        <option value="non-AC">Non-AC</option>
+        <option value="AC">AC</option>
+        </select>
+    </td>
+  </tr>
+  
+  	
+</table>
+
+<div id="search_button" style="width:800px;height:50px;padding-bottom:5px;padding-top:5px;padding-left:200px;padding-right:200px">
+<a href="searchbuses.html"><input type="submit" name="search-bus" value="Search Buses" style="background-color:#C00; border-radius:10px; color:white;width:250px;height:40px;font-size:27px;font-family: Geneva,sans-serif;cursor:pointer;-moz-border-radius:5px;-webkit-border-radius: 5px">
+</input></a>
+</div>
+</form>
+	
+</div>
+</div>
+        
+
+<div id="footer1" style="height:97px;width:100%;background-color:red;box-shadow:-0px 0px 30px #999999">
+<table width="1350" border="0" cellspacing="0" cellpadding="0"></br>
+  <tr>
+    <td style="font-size:13px;width:450px;padding-left:100px;border-right:1px"><u>Top Bus Operators</u><br>
+    								RGI Travels<br>
+                                    PG Martin<br>
+    </td>
+    <td style="font-size:13px;width:450px">FAQ<br>
+    										Terms Of Use<br>
+                                            Privacy Policy<br>
+                                            Offers
+    </td>
+    <td style="font-size:13px;width:450px">Hotel Offers<br>
+    										Contact Us<br>
+                                            Payment Methods<br>
+                                            Customer Care						
+    </td>
+    <td style="font-size:13px;width:450px">
+    <u>Connect With us<br></u>
+    <a href="https://www.facebook.com/"><img src="fb.jpg"></a>
+    <a href="https://www.twitter.com/"><img src="twitter.jpg"></a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<footer>
+<div style="height:30px; width:auto;background-color:#ccc;padding-top:7px; padding-bottom:0px;">
+<marquee><div id="font_container" style="height:20px;width:auto;font-size:16px;color:red"> GROUP 4  All Rights Reserved	2018</div></div></marquee>
+</footer>
+</body>
+</html>
